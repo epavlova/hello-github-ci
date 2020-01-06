@@ -12,3 +12,5 @@ jobs:
 
     - name: Run the CI steps action
       uses: epavlova/golang-ci-action@master
+      with:
+        coverallsToken: ${{ secrets.COVERALLS_TOKEN }}
